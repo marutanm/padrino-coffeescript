@@ -18,5 +18,12 @@ PadrinoCoffeescript.controllers  do
   #   "Hello world!"
   # end
 
+  get '/javascripts/*.js' do
+    coffee :"#{params[:splat]}"
+  end
+
+  get :index do
+    javascript_include_tag 'application'
+  end
   
 end
