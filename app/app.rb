@@ -4,6 +4,9 @@ class PadrinoCoffeescript < Padrino::Application
   register Padrino::Helpers
 
   enable :sessions
+  configure :development do
+    register BaristaInitializer
+  end
 
   ##
   # Caching support
