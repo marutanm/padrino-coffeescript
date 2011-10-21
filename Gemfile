@@ -9,6 +9,8 @@ gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
 
 # Component requirements
+gem 'rack-coffee', :require => "rack/coffee"
+gem 'coffee-script'
 gem 'haml'
 
 # Test requirements

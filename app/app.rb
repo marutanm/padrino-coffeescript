@@ -1,4 +1,5 @@
 class PadrinoCoffeescript < Padrino::Application
+  register CoffeeInitializer
   register Padrino::Rendering
   register Padrino::Mailer
   register Padrino::Helpers
