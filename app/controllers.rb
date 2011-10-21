@@ -18,5 +18,8 @@ PadrinoCoffeescript.controllers  do
   #   "Hello world!"
   # end
 
-  
+  get :index do
+    javascript_include_tag 'application'
+  end
+
 end
